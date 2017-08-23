@@ -21,9 +21,9 @@
 	height: 100vh;
 	width: 100vw;
 	background: url(../img/web_mdm_mdgel.jpg) center center;
-	-webkit-background-size: cover;
 	background-size: cover;
-	animation: shadow  14s infinite ease-in-out;
+	-webkit-animation: shadow  14s infinite ease-in-out;
+	        animation: shadow  14s infinite ease-in-out;
 }
 .wr-russia-text{
 	position: absolute;
@@ -34,7 +34,6 @@
 	z-index: 2;
 	background: #ffffff;
 	-webkit-box-shadow: inset 0px 0px 0px 27px rgba(194,192,194,0.5);
-	-moz-box-shadow: inset 0px 0px 0px 27px rgba(194,192,194,0.5);
 	box-shadow: inset 0px 0px 0px 27px rgba(194,192,194,0.5);
 /*
 	background: url(../img/test_text.jpg) center center;
@@ -43,10 +42,11 @@
 */
 }
 .wr-russia-cont{
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 80%;
 	height: 75vh;
@@ -60,7 +60,6 @@
 	font-size: 16px;
 	padding: 15px;
 	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
 .wr-russia-foto{
@@ -72,12 +71,12 @@
 	z-index: 10;
 	background: #ffffff;
 	-webkit-box-shadow: inset 0px 0px 0px 27px rgba(194,192,194,0.5);
-	-moz-box-shadow: inset 0px 0px 0px 27px rgba(194,192,194,0.5);
 	box-shadow: inset 0px 0px 0px 27px rgba(194,192,194,0.5);
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 .content{
@@ -87,21 +86,21 @@
 	height: 100vh;
 	width: 100vw;
 	background: url(../img/web_bg_russia-big.png) center center;
-	-webkit-background-size: cover;
 	background-size: cover;
 	-webkit-box-shadow: inset 0px 0px 0px 27px rgba(194,192,194,0.5);
-	-moz-box-shadow: inset 0px 0px 0px 27px rgba(194,192,194,0.5);
 	box-shadow: inset 0px 0px 0px 27px rgba(194,192,194,0.5);
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	-webkit-flex-direction: column;
 	-moz-flex-direction: column;
 	-ms-flex-direction: column;
 	-o-flex-direction: column;
-	flex-direction: column;	
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	        flex-direction: column;	
 }
 .social{
 	position: absolute;
@@ -119,7 +118,6 @@
 }
 .header-anim-wumen{
 	background: url(../img/mather-img.png);
-    -webkit-background-size: cover;
     background-size: cover;
     height: 70px;
     width: 42px;
@@ -129,7 +127,6 @@
 }
 .header-anim-text{
 	background: url(../img/mather-text.png);
-    -webkit-background-size: cover;
     background-size: cover;
     height: 60px;
     width: 415px;
@@ -226,7 +223,8 @@
 }
 
 .mainbtn:hover{
-	box-shadow: 0px 0px 0px 14px rgba(255,157,39,0.62);
+	-webkit-box-shadow: 0px 0px 0px 14px rgba(255,157,39,0.62);
+	        box-shadow: 0px 0px 0px 14px rgba(255,157,39,0.62);
 /*	background: rgba(255,157,39,0.47);*/
 	
 }
@@ -235,12 +233,13 @@
 	width: 80px;
 	height: 80px;
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding-top: 10px;
 	background: #ff9d27;
 	border-radius: 40px;
 	cursor: pointer;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
 	transition: .5s;
 	position: absolute;
 	letter-spacing: 2px;
@@ -255,7 +254,7 @@
 	color: #ffffff;
 	margin-top: 50px;
 	display: table;
-/*	padding: 1px 3px;*/
+	padding: 1px 10px;
 	letter-spacing: 3px;
 /*	background: rgb(237, 120, 156);*/
 	
@@ -270,11 +269,14 @@
 	background: #28A1B1;
 	position: absolute;
 	border-radius: 40px;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
 	transition: .5s;
 	cursor: pointer;
 }
 .btn-blue:hover{
-	box-shadow: 0px 0px 0px 14px rgba(40,161,177,0.62);
+	-webkit-box-shadow: 0px 0px 0px 14px rgba(40,161,177,0.62);
+	        box-shadow: 0px 0px 0px 14px rgba(40,161,177,0.62);
 }
 .btn-blue img {
 	width: 17px;
@@ -314,7 +316,6 @@
 
 .footer-info1-img {
 	background: url(../img/hover-left1.png);
-    -webkit-background-size: cover;
     background-size: cover;
 	height: 175px;
     width: 230px;
@@ -324,7 +325,6 @@
 }
 .footer-info1-text{
 	background: url(../img/hover-left2.png);
-    -webkit-background-size: cover;
     background-size: cover;
     height: 75px;
     width: 290px;
@@ -343,7 +343,6 @@
 }
 .footer-info2-img {
 	background: url(../img/hover-right1.png);
-    -webkit-background-size: cover;
     background-size: cover;
     height: 121px;
     width: 295px;
@@ -353,7 +352,6 @@
 }
 .footer-info2-text{
 	background: url(../img/hover-right2.png);
-    -webkit-background-size: cover;
     background-size: cover;
     height: 75px;
     width: 270px;
@@ -383,10 +381,16 @@
 
 /*CSS ANIMATION*/
 
+@-webkit-keyframes shadow {
+	0% {-webkit-transform: scale(1);transform: scale(1)}
+	50% {-webkit-transform: scale(1.2);transform: scale(1.2)}
+	100% {-webkit-transform: scale(1);transform: scale(1)}
+}
+
 @keyframes shadow {
-	0% {transform: scale(1)}
-	50% {transform: scale(1.2)}
-	100% {transform: scale(1)}
+	0% {-webkit-transform: scale(1);transform: scale(1)}
+	50% {-webkit-transform: scale(1.2);transform: scale(1.2)}
+	100% {-webkit-transform: scale(1);transform: scale(1)}
 }
 
 
@@ -408,15 +412,14 @@
 	.wr-russia-text{
 
 	-webkit-box-shadow: inset 0px 0px 0px 17px rgba(194,192,194,0.5);
-	-moz-box-shadow: inset 0px 0px 0px 17px rgba(194,192,194,0.5);
 	box-shadow: inset 0px 0px 0px 17px rgba(194,192,194,0.5);
 }
 	.content{
 	-webkit-box-shadow: inset 0px 0px 0px 17px rgba(194,192,194,0.5);
-	-moz-box-shadow: inset 0px 0px 0px 17px rgba(194,192,194,0.5);
 	box-shadow: inset 0px 0px 0px 17px rgba(194,192,194,0.5);
 	
 
+}
 }
 	
 @media screen and (max-width:720px){
@@ -435,5 +438,4 @@
 		font-size: 14px;
 	}	
 }
-
 
